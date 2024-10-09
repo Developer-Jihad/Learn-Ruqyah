@@ -38,8 +38,6 @@ const Footer = () => {
               এই পথ চলা... <br />
               ওয়ামা তাওফীকী ইল্লা বিল্লাহ । <br />
             </Typography>
-            <Typography variant="body2" color={"#98E59A"} pt={1}><q>Learn Ruqyah and Share the Knowledge</q></Typography>
-            
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
@@ -146,20 +144,18 @@ const Footer = () => {
             </Box>
           </Grid>
         </Grid>
-        {/* <Typography
-          variant="h5"
-          color={"green"}
+        <Typography
+          variant="body2"
+          color={"#98E59A"}
+          pt={2}
           textAlign={"center"}
-          sx={{
-            width: "100%",
-            // backgroundColor: "white ",
-            p: 1,
-            mt: 2,
-            borderRadius: "5px",
-          }}
         >
-          <b>Learn Ruqyah and Share the Knowledge</b>
-        </Typography>  */}
+          © 2024 - Md Jihad Hossain - Web Developer at{" "}
+          <a target="_blank" href="https://skill.assunnahfoundation.org/">
+            <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
+          </a>
+          . All Rights Reserved. | <q>Learn Ruqyah and Share the Knowledge</q>
+        </Typography>
       </Container>
     </Box>
   );

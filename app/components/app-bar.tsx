@@ -28,7 +28,7 @@ interface Props {
 }
 
 const drawerWidth = 200;
-const navItems = ["Home", "Videos", "Docs", "Ruqy"];
+const navItems = ["Home", "Videos", "Docs", "ডায়াগনোসিস", "Ruqy"];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -40,7 +40,7 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h5" sx={{ my: 2, color: 'white' }}>
+      <Typography variant="h5" sx={{ my: 2, color: "white" }}>
         Learn Ruqyah
       </Typography>
       <Divider />
@@ -102,11 +102,11 @@ export default function DrawerAppBar(props: Props) {
               aria-label="open drawer"
               edge="end"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: "none" } }}
+              sx={{ display: { md: "none" } }}
             >
               <MenuIcon />
             </IconButton>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
                 <Button
                   key={item}
@@ -114,9 +114,11 @@ export default function DrawerAppBar(props: Props) {
                     color: "#fff",
                     "&:hover": {
                       backgroundColor: "rgba(255, 255, 255, 0.1)",
+                      // backgroundColor: "#66D966",
                     },
+                    
                     fontFamily: "Lexend, sans-serif",
-                    ml: 2,
+                    px: 3,
                   }}
                 >
                   {item}
@@ -138,11 +140,13 @@ export default function DrawerAppBar(props: Props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backdropFilter: "blur(10px)", backgroundColor: "rgba(0, 0, 0, 0.6)", height: '100vh'
+              backdropFilter: "blur(10px)",
+              backgroundColor: "rgba(0, 0, 0, 0.6)",
+              height: "100vh",
             },
           }}
         >
@@ -154,6 +158,3 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 }
-
-
-

@@ -9,8 +9,9 @@ import {
 } from "@mui/material";
 
 export default function Bookmark({ title, description, url, coverImage }) {
+  
   return (
-    <Card sx={{ maxWidth: 345, height: '100%' }}>
+    <Card sx={{ maxWidth: 345, height: "100%" }}>
       <CardActionArea
         component="a"
         href={url}
@@ -29,7 +30,7 @@ export default function Bookmark({ title, description, url, coverImage }) {
           <Typography gutterBottom variant="h4" component="div" py={1}>
             <b>{title}</b>
           </Typography>
-          
+
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>

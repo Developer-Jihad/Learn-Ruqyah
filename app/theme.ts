@@ -4,6 +4,7 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
+  
   palette: {
     primary: {
       main: "#333", // Customize the primary color
@@ -41,7 +42,7 @@ const theme = createTheme({
       fontFamily: "Hind Siliguri, sans-serif",
       fontWeight: 600,
       fontSize: "1.65rem",
-      color: "#6aa84f",
+      color: "#64D264",
     },
     h3: {
       fontFamily: "Gentium Basic, serif",
