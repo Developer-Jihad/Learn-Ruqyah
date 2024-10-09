@@ -1,7 +1,11 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-export default function Video({ url }) {
+interface VideoProps {
+  url: string;
+}
+
+export default function Video({ url }: VideoProps) {
   return (
     <Box
       sx={{
@@ -16,10 +20,10 @@ export default function Video({ url }) {
         width="1236"
         height="695"
         src={url}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
         style={{
           position: "absolute",
           top: 0,

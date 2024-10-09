@@ -8,7 +8,14 @@ import {
   Link,
 } from "@mui/material";
 
-export default function Bookmark({ title, description, url, coverImage }) {
+interface BookmarkProps {
+  title: string;
+  description: string;
+  url: string;
+  coverImage: string;
+}
+
+export default function Bookmark({ title, description, url, coverImage }: BookmarkProps) {
   
   return (
     <Card sx={{ maxWidth: 345, height: "100%" }}>
