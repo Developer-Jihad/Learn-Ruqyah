@@ -75,11 +75,7 @@ export default function Home() {
             </Grid>
             <Grid container item spacing={3} xs={12} sm={12} md={4}>
               <Grid item xs={12} sm={6} md={12}>
-                {/* <Video
-                  url={
-                    "https://www.youtube.com/embed/4cnj9365sww?si=HHCZ1vskiGTy9l6V"
-                  }
-                /> */}
+                
                 <Link
                   href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG" target="_blank"
                   passHref
