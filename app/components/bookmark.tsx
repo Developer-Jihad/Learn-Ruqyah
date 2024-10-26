@@ -18,7 +18,7 @@ interface BookmarkProps {
 export default function Bookmark({ title, description, url, coverImage }: BookmarkProps) {
   
   return (
-    <Card sx={{ maxWidth: 345, height: "100%" }}>
+    <Card sx={{ maxWidth: 345, height: "100%", borderRadius:'10px' }}>
       <CardActionArea
         component="a"
         href={url}

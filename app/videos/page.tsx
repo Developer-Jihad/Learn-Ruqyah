@@ -1,6 +1,9 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import Video from "../components/video";
+import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Videos() {
   return (
@@ -28,11 +31,29 @@ export default function Videos() {
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <Video
+              {/* <Video
                 url={
                   "https://www.youtube.com/embed/4cnj9365sww?si=HHCZ1vskiGTy9l6V"
                 }
-              />
+              /> */}
+              <Link href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG" target="_blank" passHref>
+              <Box
+                    sx={{
+                      position: "relative",
+                      width: "100%",
+                      height: 0,
+                      paddingBottom: "56.25%",
+                    }}
+                  >
+                    <Image
+                      src="/ruqyahSeminar.jpg"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="Picture of the author"
+                      style={{ borderRadius: "10px" }}
+                    />
+                  </Box>
+                </Link>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
@@ -42,11 +63,29 @@ export default function Videos() {
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <Video
+              {/* <Video
                 url={
                   "https://www.youtube.com/embed/Fzo5Sf6k92k?si=JTWVoPAZpxdu8TY1"
                 }
-              />
+              /> */}
+              <Link href="https://youtu.be/Fzo5Sf6k92k?si=ki3hIWmRbRf8ocww" target="_blank" passHref>
+              <Box
+                    sx={{
+                      position: "relative",
+                      width: "100%",
+                      height: 0,
+                      paddingBottom: "56.25%",
+                    }}
+                  >
+                    <Image
+                      src="/saikhLecture.jpg"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="Picture of the author"
+                      style={{ borderRadius: "10px" }}
+                    />
+                  </Box>
+                </Link>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video

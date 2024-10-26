@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Grid, Box, Typography, Link } from "@mui/material";
+import Bookmark from "../components/bookmark";
+
 
 export default function Docs() {
   return (
@@ -63,6 +65,49 @@ export default function Docs() {
           করেননি। এসকল বিষয় মাথায় রেখে আল্লাহর উপর পরিপূর্ণ আস্থা এবং বিশ্বাস
           স্থাপন করুন।
         </Typography>
+      </Container>
+      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+        <Container>
+          <Typography variant="h5" sx={{ mb: 1, color:'#66BB6A'}}>
+            Learn More About Ruqyah
+          </Typography>
+          <Typography sx={{ color: "#e69138", fontSize: "17px" }}>
+            রুকইয়াহ সম্পর্কে আরো বিস্তারিত জানতে নিচের সোর্স গুলো অনুসরন করুন।
+          </Typography>
+        </Container>
+      </Box>
+      <Container sx={{ my: 3 }}>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={3}>
+            <Grid container item spacing={3}>
+              <Grid item xs={12} sm={6} md={4}>
+                <Bookmark
+                  title="রুকইয়াহ বই"
+                  description="‘রুকইয়াহ’ বইটিতে ইসলামসম্মত স্প্রিচ্যুয়াল হিলিং নিয়ে সহজ ভাষায় বিস্তর আলোচনা করা হয়েছে। ... Read More"
+                  url="https://ruqyahbd.org/shop"
+                  coverImage="./ruqyahBook.jpg"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Bookmark
+                  title="রুকইয়াহ সাপোর্ট বিডি (Website)"
+                  description="রুকইয়াহ সম্পর্কিত প্রায় সকল তথ্য এই ওয়েবসাইটে খুব সহজেই জানতে পারবেন। ... Read More"
+                  url="https://ruqyahbd.org/"
+                  coverImage="./ruqyahSupportBdLogo.jpg"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Bookmark
+                  title="Ruqyah Short PDF"
+                  description="সংক্ষেপে রুকইয়াহ সম্পর্কে জানতে এই পিডিএফটি পড়তে পারেন। ... Read More"
+                  url="https://drive.google.com/file/d/162ZGtGea1bmQWxbD0_QRTM3tyRjquzig/view"
+                  coverImage="./ruqyahShortPDF.png"
+                />
+              </Grid>
+              
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
     </Box>
   );

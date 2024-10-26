@@ -4,6 +4,7 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import Video from "../components/video";
 import Bookmark from "../components/bookmark";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -74,11 +75,32 @@ export default function Home() {
             </Grid>
             <Grid container item spacing={3} xs={12} sm={12} md={4}>
               <Grid item xs={12} sm={6} md={12}>
-                <Video
+                {/* <Video
                   url={
                     "https://www.youtube.com/embed/4cnj9365sww?si=HHCZ1vskiGTy9l6V"
                   }
-                />
+                /> */}
+                <Link
+                  href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG" target="_blank"
+                  passHref
+                >
+                  <Box
+                    sx={{
+                      position: "relative",
+                      width: "100%",
+                      height: 0,
+                      paddingBottom: "56.25%",
+                    }}
+                  >
+                    <Image
+                      src="/ruqyahSeminar.jpg"
+                      layout="fill"
+                      objectFit="cover"
+                      alt="Picture of the author"
+                      style={{ borderRadius: "10px" }}
+                    />
+                  </Box>
+                </Link>
               </Grid>
               <Grid item xs={12} sm={6} md={12}>
                 <Video
@@ -153,12 +175,14 @@ export default function Home() {
               </Grid>
               <Grid container spacing={3} item xs={6} sm={6} md={6}>
                 <Grid item xs={12}>
-                  <Bookmark
-                    title="রাক্বি Contacts"
-                    description="লিস্ট দিয়েছি বলেই দৌড় দিয়ে চলে যাবেন না। নিজ দায়িত্বে খোঁজখবর নিয়ে... Read More"
-                    url="https://developer-jihad.notion.site/Contacts-1131b1cb471e807eafb2f1f18c96e0a8"
-                    coverImage="./raqy.png"
-                  />
+                  <Link href="/ruqy" passHref>
+                    <Bookmark
+                      title="রাক্বি Contacts"
+                      description="লিস্ট দিয়েছি বলেই দৌড় দিয়ে চলে যাবেন না। নিজ দায়িত্বে খোঁজখবর নিয়ে... Read More"
+                      url="http://localhost:3000/ruqy"
+                      coverImage="./ruqy.png"
+                    />
+                  </Link>
                 </Grid>
                 <Grid item xs={12}>
                   <Link href="/docs" passHref>

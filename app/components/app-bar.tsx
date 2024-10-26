@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -30,7 +30,7 @@ const navItems = [
   { label: "Videos", path: "/videos" },
   { label: "Docs", path: "/docs" },
   { label: "ডায়াগনোসিস", path: "/diagnosis" },
-  { label: "Ruqy", path: "/ruqy" }
+  { label: "Ruqy", path: "/ruqy" },
 ];
 
 export default function DrawerAppBar(props: Props) {
@@ -95,7 +95,17 @@ export default function DrawerAppBar(props: Props) {
         <Container disableGutters>
           <Toolbar>
             <Link href="/">
-            <Image src={logo} alt="Ruqyah logo" width={33} height={30} />
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%", // Make sure the container takes full width of the parent
+                  height: "100%", // Make sure the container takes full height of the parent if needed
+                }}
+              >
+                <Image src={logo} alt="Ruqyah logo" width={33} height={30} />
+              </Box>
             </Link>
             <Typography
               variant="h5"

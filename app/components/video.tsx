@@ -10,7 +10,7 @@ export default function Video({ url }: VideoProps) {
     <Box
       sx={{
         position: "relative",
-        paddingBottom: "56.25%",
+        paddingBottom: "55.25%",
         overflow: "hidden",
         maxWidth: "100%",
         height: '100%'
@@ -30,7 +30,7 @@ export default function Video({ url }: VideoProps) {
           left: 0,
           width: "100%",
           height: "100%",
-          borderRadius: "7px",
+          borderRadius: "10px",
         }}
       />
     </Box>

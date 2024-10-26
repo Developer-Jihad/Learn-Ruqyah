@@ -12,7 +12,7 @@ import "@fontsource/lexend/700.css"; // Bold weight
 
 import DrawerAppBar from "./components/app-bar";
 import Footer from "./components/footer";
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./theme"; // Adjust the path as needed
 // const inter = Inter({ subsets: ["latin"] });
