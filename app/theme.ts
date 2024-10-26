@@ -52,7 +52,7 @@ const theme = createTheme({
     h4: {
       fontFamily: "Hind Siliguri, sans-serif",
       fontWeight: 600,
-      fontSize: "1.1rem",
+      fontSize: "1rem",
       
     },
     h5: {

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import Video from "../components/video";
@@ -53,7 +54,7 @@ export default function Home() {
       <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
         <Container>
           <Typography variant="h2" sx={{ mb: 1 }}>
-            🎞️ মৌলিক Videos:
+            🎞️ মৌলিক Videos ▼
           </Typography>
           <Typography sx={{ color: "#e69138", fontSize: "17px" }}>
             অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
@@ -87,20 +88,22 @@ export default function Home() {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Button
-                  sx={{
-                    width: "100%",
-                    backgroundColor: "#64D264",
-                    "&:hover": {
-                      backgroundColor: "#1B5E20",
-                    },
-                  }}
-                  variant="contained"
-                  size="medium"
-                  endIcon={<SendIcon />}
-                >
-                  <b>See All Videos</b>
-                </Button>
+                <Link href="/videos" passHref>
+                  <Button
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "#64D264",
+                      "&:hover": {
+                        backgroundColor: "#1B5E20",
+                      },
+                    }}
+                    variant="contained"
+                    size="medium"
+                    endIcon={<SendIcon />}
+                  >
+                    <b>See All Videos</b>
+                  </Button>
+                </Link>
               </Grid>
             </Grid>
           </Grid>
@@ -126,7 +129,7 @@ export default function Home() {
       {/* -------------- Get Help From Raqies ---------------- */}
       <Box sx={{ bgcolor: "background.paper", py: 3, my: 5 }}>
         <Container>
-          <Typography variant="h2">📞 রাক্বিদের সাহায্য নিন</Typography>
+          <Typography variant="h2">📞 রাক্বিদের সাহায্য নিন ▼</Typography>
         </Container>
       </Box>
       <Container sx={{ my: 3 }}>
@@ -151,28 +154,29 @@ export default function Home() {
               <Grid container spacing={3} item xs={6} sm={6} md={6}>
                 <Grid item xs={12}>
                   <Bookmark
-                    title="রাক্বিদের বিষয়ে দায়মুক্তি"
-                    description="রিস্কের সম্ভবনাও যেখানে দেখবো তার কথা বলবো না। ... Read More"
-                    url="https://ruqyahbd.org/blog/4649/disclaimer-about-raqis"
+                    title="রাক্বি Contacts"
+                    description="লিস্ট দিয়েছি বলেই দৌড় দিয়ে চলে যাবেন না। নিজ দায়িত্বে খোঁজখবর নিয়ে... Read More"
+                    url="https://developer-jihad.notion.site/Contacts-1131b1cb471e807eafb2f1f18c96e0a8"
                     coverImage="./raqy.png"
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <Button
-                    sx={{
-                      width: "100%",
-                      backgroundColor: "#64D264",
-                      "&:hover": {
-                        backgroundColor: "#1B5E20",
-                      },
-                    }}
-                    variant="contained"
-                    color="success"
-                    size="medium"
-                    endIcon={<SendIcon />}
-                  >
-                    <b>See All Docs</b>
-                  </Button>
+                  <Link href="/docs" passHref>
+                    <Button
+                      sx={{
+                        width: "100%",
+                        backgroundColor: "#64D264",
+                        "&:hover": {
+                          backgroundColor: "#1B5E20",
+                        },
+                      }}
+                      variant="contained"
+                      size="medium"
+                      endIcon={<SendIcon />}
+                    >
+                      <b>See All Docs</b>
+                    </Button>
+                  </Link>
                 </Grid>
               </Grid>
             </Grid>

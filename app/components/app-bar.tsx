@@ -1,5 +1,6 @@
-"use client";
+"use client"
 
+import Link from 'next/link';
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -20,15 +21,17 @@ import Image from "next/image";
 import logo from "@/public/logo.png";
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
 }
 
 const drawerWidth = 200;
-const navItems = ["Home", "Videos", "Docs", "ডায়াগনোসিস", "Ruqy"];
+const navItems = [
+  { label: "Home", path: "/" },
+  { label: "Videos", path: "/videos" },
+  { label: "Docs", path: "/docs" },
+  { label: "ডায়াগনোসিস", path: "/diagnosis" },
+  { label: "Ruqy", path: "/ruqy" }
+];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -46,8 +49,10 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item}>
+          <ListItem key={item.label}>
             <ListItemButton
+              component={Link}
+              href={item.path}
               sx={{
                 bgcolor: "#444",
                 textAlign: "center",
@@ -65,7 +70,7 @@ export default function DrawerAppBar(props: Props) {
                     fontFamily: "Lexend, sans-serif",
                   },
                 }}
-                primary={item}
+                primary={item.label}
               />
             </ListItemButton>
           </ListItem>
@@ -89,7 +94,9 @@ export default function DrawerAppBar(props: Props) {
       >
         <Container disableGutters>
           <Toolbar>
-            <Image src={logo} alt="Ruqyah logo" width={38} height={35} />
+            <Link href="/">
+            <Image src={logo} alt="Ruqyah logo" width={33} height={30} />
+            </Link>
             <Typography
               variant="h5"
               component="div"
@@ -109,19 +116,19 @@ export default function DrawerAppBar(props: Props) {
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
                 <Button
-                  key={item}
+                  key={item.label}
+                  component={Link}
+                  href={item.path}
                   sx={{
                     color: "#fff",
                     "&:hover": {
                       backgroundColor: "rgba(255, 255, 255, 0.1)",
-                      // backgroundColor: "#66D966",
                     },
-                    
                     fontFamily: "Lexend, sans-serif",
                     px: 3,
                   }}
                 >
-                  {item}
+                  {item.label}
                 </Button>
               ))}
             </Box>
@@ -137,7 +144,7 @@ export default function DrawerAppBar(props: Props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", md: "none" },

@@ -13,19 +13,7 @@ const Footer = () => {
       }}
     >
       <Container maxWidth="lg">
-        {/* <Typography
-          variant="h5"
-          color={"green"}
-          textAlign={"center"}
-          sx={{
-            width: "100%",
-            backgroundColor: "white ",
-            p: 1,
-            borderRadius: "5px",
-          }}
-        >
-          <b>Learn Ruqyah and Share the Knowledge</b>
-        </Typography> */}
+        
         <br />
         <Grid container spacing={3}>
           {/* Column 1 */}
@@ -150,11 +138,11 @@ const Footer = () => {
           pt={2}
           textAlign={"center"}
         >
-          © 2024 - Md Jihad Hossain - Web Developer at{" "}
+          <q>Learn Ruqyah and Share the Knowledge</q>  |  © 2024 - Md Jihad Hossain - Web Developer at{" "}
           <a target="_blank" href="https://skill.assunnahfoundation.org/">
             <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
           </a>
-          . All Rights Reserved. | <q>Learn Ruqyah and Share the Knowledge</q>
+          .  All Rights Reserved.
         </Typography>
       </Container>
     </Box>
