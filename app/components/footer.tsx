@@ -23,7 +23,7 @@ const Footer = () => {
             </Typography>
             <Typography>
               ঘরে ঘরে কুরআন সুন্নাহ ভিত্তিক রুকিয়াহ সচেতনতা বৃদ্ধির লক্ষে আমাদের
-              এই পথ চলা... <br />
+              এই প্রচেষ্টা ... <br />
               ওয়ামা তাওফীকী ইল্লা বিল্লাহ । <br />
             </Typography>
           </Grid>
@@ -47,16 +47,13 @@ const Footer = () => {
               <Typography variant="body2">Home</Typography>
             </Link>
             <Link href="/videos">
-              <Typography variant="body2">All Videow</Typography>
+              <Typography variant="body2">All Videos</Typography>
             </Link>
             <Link href="/docs">
               <Typography variant="body2">All Document</Typography>
             </Link>
             <Link href="/diagnosis">
               <Typography variant="body2">ডায়াগনোসিস</Typography>
-            </Link>
-            <Link href="/ruqy">
-              <Typography variant="body2">Ruqy Contacts</Typography>
             </Link>
           </Grid>
 

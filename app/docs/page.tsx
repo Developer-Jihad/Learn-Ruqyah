@@ -15,7 +15,6 @@ export default function Docs() {
             gap: 1,
             alignItems: "center",
             mt: 5,
-            mb: 2,
           }}
         >
           <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
