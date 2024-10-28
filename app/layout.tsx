@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "./globals.css";
 import "@fontsource/hind-siliguri/400.css"; // Normal weight
-import "@fontsource/hind-siliguri/600.css"; // Bold weight
+import "@fontsource/hind-siliguri/700.css"; // Bold weight
 import "@fontsource/gentium-basic/400.css"; // Normal weight
 import "@fontsource/gentium-basic/700.css"; // Bold weight
 import "@fontsource/noto-serif-bengali/400.css"; // Normal weight

@@ -3,24 +3,32 @@ import React from "react";
 import Video from "../components/video";
 import Image from "next/image";
 import Link from "next/link";
-
+import videosIcon from "../../app/images/icons/videos.png";
 
 export default function Videos() {
   return (
     <div>
       {/*=========== মৌলিক Videos ===========*/}
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h2" sx={{ mb: 1 }}>
-            🎞️ মৌলিক Videos ▼
-          </Typography>
-          <Typography sx={{ color: "#e69138", fontSize: "17px" }}>
-            অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
-            প্রত্যেকের জন্য আবশ্যক।
-          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <Typography variant="h2">মৌলিক Videos</Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
+        <Typography sx={{ color: "orange" }}>
+          অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
+          প্রত্যেকের জন্য আবশ্যক।
+        </Typography>
+        <br />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>
@@ -36,24 +44,28 @@ export default function Videos() {
                   "https://www.youtube.com/embed/4cnj9365sww?si=HHCZ1vskiGTy9l6V"
                 }
               /> */}
-              <Link href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG" target="_blank" passHref>
-              <Box
-                    sx={{
-                      position: "relative",
-                      width: "100%",
-                      height: 0,
-                      paddingBottom: "56.25%",
-                    }}
-                  >
-                    <Image
-                      src="/ruqyahSeminar.jpg"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="Picture of the author"
-                      style={{ borderRadius: "10px" }}
-                    />
-                  </Box>
-                </Link>
+              <Link
+                href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG"
+                target="_blank"
+                passHref
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    height: 0,
+                    paddingBottom: "56.25%",
+                  }}
+                >
+                  <Image
+                    src="/ruqyahSeminar.jpg"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Picture of the author"
+                    style={{ borderRadius: "10px" }}
+                  />
+                </Box>
+              </Link>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
@@ -68,24 +80,28 @@ export default function Videos() {
                   "https://www.youtube.com/embed/Fzo5Sf6k92k?si=JTWVoPAZpxdu8TY1"
                 }
               /> */}
-              <Link href="https://youtu.be/Fzo5Sf6k92k?si=ki3hIWmRbRf8ocww" target="_blank" passHref>
-              <Box
-                    sx={{
-                      position: "relative",
-                      width: "100%",
-                      height: 0,
-                      paddingBottom: "56.25%",
-                    }}
-                  >
-                    <Image
-                      src="/saikhLecture.jpg"
-                      layout="fill"
-                      objectFit="cover"
-                      alt="Picture of the author"
-                      style={{ borderRadius: "10px" }}
-                    />
-                  </Box>
-                </Link>
+              <Link
+                href="https://youtu.be/Fzo5Sf6k92k?si=ki3hIWmRbRf8ocww"
+                target="_blank"
+                passHref
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    height: 0,
+                    paddingBottom: "56.25%",
+                  }}
+                >
+                  <Image
+                    src="/saikhLecture.jpg"
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Picture of the author"
+                    style={{ borderRadius: "10px" }}
+                  />
+                </Box>
+              </Link>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
@@ -98,11 +114,18 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== জীন সম্পর্কিত Videos ===========*/}
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h2">
-          🎞️ জীন সম্পর্কিত Videos:
-          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <Typography variant="h2">জীন সম্পর্কিত Videos</Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
@@ -147,11 +170,18 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== যাদু সম্পর্কিত Videos: ===========*/}
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h2">
-          🎞️ যাদু সম্পর্কিত Videos:
-          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <Typography variant="h2">যাদু সম্পর্কিত Videos</Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
@@ -196,16 +226,31 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== বদ নজর সম্পর্কিত Videos: ===========*/}
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h2">
-          🎞️ বদ নজর সম্পর্কিত Videos:
-          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <Typography variant="h2">বদ নজর সম্পর্কিত Videos</Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
-      <Typography>⚠️ রাসূল ﷺ বলেছেন, নিজের প্রয়োজন পূরণ হওয়ার ক্ষেত্রে ‘সেটা গোপন এবং লুকায়িত রাখার’ মাধ্যমে সাহায্য লাভ করো। কেননা, প্রতিটা নিয়ামত লাভকারী হিংসার স্বীকার হয়ে থাকে। (তাবারানী-আওসাতঃ২৫২৯) </Typography>
-      <Typography sx={{ mb: 5 }}>⚠️ রাসূল ﷺ আরো বলেছেন: “আল্লাহর ফায়সালা ও তাক্বদিরের পর আমার উম্মতের বড় অংশের মৃত্যু হবে বদনজরের কারণে!”। (মুসনাদে আবি দাউদ ১৮৫৮, সনদ হাসান) </Typography>
+        <Typography>
+          ⚠️ রাসূল ﷺ বলেছেন, নিজের প্রয়োজন পূরণ হওয়ার ক্ষেত্রে ‘সেটা গোপন এবং
+          লুকায়িত রাখার’ মাধ্যমে সাহায্য লাভ করো। কেননা, প্রতিটা নিয়ামত লাভকারী
+          হিংসার স্বীকার হয়ে থাকে। (তাবারানী-আওসাতঃ২৫২৯){" "}
+        </Typography>
+        <Typography sx={{ mb: 5 }}>
+          ⚠️ রাসূল ﷺ আরো বলেছেন: “আল্লাহর ফায়সালা ও তাক্বদিরের পর আমার উম্মতের
+          বড় অংশের মৃত্যু হবে বদনজরের কারণে!”। (মুসনাদে আবি দাউদ ১৮৫৮, সনদ
+          হাসান){" "}
+        </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>
@@ -229,20 +274,33 @@ export default function Videos() {
                 }
               />
             </Grid>
-            
           </Grid>
         </Box>
       </Container>
       {/*=========== চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু Videos: ===========*/}
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h2">
-          🎞️ চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু Videos:
-          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <Typography variant="h2">
+              চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু Videos
+            </Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
-        <Typography sx={{ mb: 5 }}>চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু ভিডিও ক্লিপ এখানে দেখানো হলো, যাতে করে চিকিৎসা চলাকালীন রুগীর রিয়াকশন দেখে রুগীর অভিভাবকরা বিব্রত না হয়। তবে সব সময় সব রুগীর ক্ষেত্রে সব ধরনের রিঅ্যাকশন দেখা যায় না। এইসব রিঅ্যাকশন রোগীর সমস্যার ধরন এর উপর নির্ভর করে।</Typography>
+        <Typography sx={{ mb: 5 }}>
+          চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু ভিডিও ক্লিপ এখানে দেখানো
+          হলো, যাতে করে চিকিৎসা চলাকালীন রুগীর রিয়াকশন দেখে রুগীর অভিভাবকরা
+          বিব্রত না হয়। তবে সব সময় সব রুগীর ক্ষেত্রে সব ধরনের রিঅ্যাকশন দেখা
+          যায় না। এইসব রিঅ্যাকশন রোগীর সমস্যার ধরন এর উপর নির্ভর করে।
+        </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>

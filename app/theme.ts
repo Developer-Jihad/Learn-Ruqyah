@@ -40,9 +40,9 @@ const theme = createTheme({
     },
     h2: {
       fontFamily: "Hind Siliguri, sans-serif",
-      fontWeight: 600,
-      fontSize: "1.65rem",
-      color: "#64D264",
+      fontWeight: 700,
+      fontSize: "1.5rem",
+      color: "#66BB6A",
     },
     h3: {
       fontFamily: "Gentium Basic, serif",
@@ -51,7 +51,7 @@ const theme = createTheme({
     },
     h4: {
       fontFamily: "Hind Siliguri, sans-serif",
-      fontWeight: 600,
+      fontWeight: 700,
       fontSize: "1rem",
       
     },
@@ -71,7 +71,8 @@ const theme = createTheme({
       fontFamily: "Noto Serif Bengali, serif",
       fontWeight: 400,
       fontSize: ".8rem",
-      lineHeight: 1.5,
+      lineHeight: 2,
+      color: "white"
     },
     // body1: {
     //   fontFamily: "Noto Serif Bengali, serif",

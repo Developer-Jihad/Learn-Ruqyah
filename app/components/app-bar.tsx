@@ -54,7 +54,7 @@ export default function DrawerAppBar(props: Props) {
               component={Link}
               href={item.path}
               sx={{
-                bgcolor: "#444",
+                bgcolor: "#333",
                 textAlign: "center",
                 borderRadius: "5px",
                 color: "white",
@@ -89,7 +89,8 @@ export default function DrawerAppBar(props: Props) {
         component="nav"
         sx={{
           backdropFilter: "blur(10px)",
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          backgroundColor: "rgba(10, 20, 30, 0.9)",
+          borderBottom: '1px solid white'
         }}
       >
         <Container disableGutters>
@@ -162,7 +163,7 @@ export default function DrawerAppBar(props: Props) {
               boxSizing: "border-box",
               width: drawerWidth,
               backdropFilter: "blur(10px)",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
+              backgroundColor: "rgba(10, 20, 30, 0.9)",
               height: "100vh",
             },
           }}

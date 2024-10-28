@@ -5,6 +5,9 @@ import SendIcon from "@mui/icons-material/Send";
 import Video from "../components/video";
 import Bookmark from "../components/bookmark";
 import Image from "next/image";
+import docsIcon from "../../app/images/icons/document.png";
+import videosIcon from "../../app/images/icons/videos.png";
+import contactIcon from "../../app/images/icons/mobile.png";
 
 export default function Home() {
   return (
@@ -31,9 +34,18 @@ export default function Home() {
         />
       </Box>
       <Container sx={{ mt: 3 }}>
-        <Typography variant="h2" sx={{ mt: 5, mb: 2 }}>
-          🔰 রুকইয়াহ (Ruqyah) কি?
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+            mt: 5,
+            mb: 2,
+          }}
+        >
+          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <Typography variant="h2">রুকইয়াহ (Ruqyah) কি?</Typography>
+        </Box>
 
         <Typography align="justify" sx={{ mb: 1, textIndent: "17pt" }}>
           ঝাড়ফুঁককে আরবীতে রুকইয়াহ বলা হয়। মানুষের দৃশ্য-অদৃশ্য যে কোনো রোগের
@@ -52,18 +64,26 @@ export default function Home() {
       </Container>
 
       {/* -------------- Most Important Videos --------------- */}
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h2" sx={{ mb: 1 }}>
-            🎞️ মৌলিক Videos ▼
-          </Typography>
-          <Typography sx={{ color: "#e69138", fontSize: "17px" }}>
-            অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
-            প্রত্যেকের জন্য আবশ্যক।
-          </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+          }}
+        >
+          <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+          <Typography variant="h2">মৌলিক Videos</Typography>
+        </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
+          <Typography sx={{ color: "orange" }}>
+            অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
+            প্রত্যেকের জন্য আবশ্যক।
+          </Typography>
+          <br/>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12} md={8}>
@@ -75,9 +95,9 @@ export default function Home() {
             </Grid>
             <Grid container item spacing={3} xs={12} sm={12} md={4}>
               <Grid item xs={12} sm={6} md={12}>
-                
                 <Link
-                  href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG" target="_blank"
+                  href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG"
+                  target="_blank"
                   passHref
                 >
                   <Box
@@ -110,7 +130,7 @@ export default function Home() {
                   <Button
                     sx={{
                       width: "100%",
-                      backgroundColor: "#64D264",
+                      backgroundColor: "#66BB6A",
                       "&:hover": {
                         backgroundColor: "#1B5E20",
                       },
@@ -129,7 +149,16 @@ export default function Home() {
       </Container>
       <br />
       <Container>
-        <Typography variant="h2">🔰 রুকইয়াহ বৈধ হওয়ার শর্ত:</Typography>
+      <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+          }}
+        >
+          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <Typography variant="h2">রুকইয়াহ বৈধ হওয়ার শর্ত:</Typography>
+        </Box>
         <br />
         <Typography align="justify" sx={{ mb: 1 }}>
           রুকইয়াহ বৈধও হতে পারে আবার অবৈধও হতে পারে। যদি শরীয়তসম্মত পন্থায় করা
@@ -145,9 +174,18 @@ export default function Home() {
       </Container>
       <br />
       {/* -------------- Get Help From Raqies ---------------- */}
-      <Box sx={{ bgcolor: "background.paper", py: 3, my: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, my: 5 }}>
         <Container>
-          <Typography variant="h2">📞 রাক্বিদের সাহায্য নিন ▼</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+          }}
+        >
+          <Image src={contactIcon} alt="Contacts logo" width={33} height={30} />
+          <Typography variant="h2">রাক্বিদের সাহায্য নিন</Typography>
+        </Box>
         </Container>
       </Box>
       <Container sx={{ my: 3 }}>
@@ -185,7 +223,7 @@ export default function Home() {
                     <Button
                       sx={{
                         width: "100%",
-                        backgroundColor: "#64D264",
+                        backgroundColor: "#66BB6A",
                         "&:hover": {
                           backgroundColor: "#1B5E20",
                         },

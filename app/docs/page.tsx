@@ -1,19 +1,26 @@
 import React from "react";
 import { Container, Grid, Box, Typography, Link } from "@mui/material";
 import Bookmark from "../components/bookmark";
+import Image from "next/image";
+import docsIcon from "../../app/images/icons/document.png";
+
 
 export default function Docs() {
   return (
     <Box>
       <Container>
-        <Typography
-          variant="h2"
-          mt={5}
-          pb={3}
-          sx={{ borderBottom: "3px solid #66BB6A" }}
+      <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+            mt: 5,
+            mb: 2,
+          }}
         >
-          🔰 রুকইয়াহ First-Aid
-        </Typography>
+          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <Typography variant="h2">রুকইয়াহ First-Aid</Typography>
+        </Box>
         <br />
         <Typography variant="body1" align="justify" sx={{ mb: 1, lineHeight: 2 }}>
           1. ঘর হতে সবগুলো প্রাণীর ছবি/ মুর্তি, তাবিজ, কুকুর এবং সকল অপবিত্রতা অপসারণ করে ঘরকে পবিত্র করুন।
@@ -49,17 +56,25 @@ export default function Docs() {
           14. দুনিয়াতে মৃত্যু ব্যতীত এমন কোন রোগ নেই, যার সুস্থতা আল্লাহ নাযিল করেননি। এসকল বিষয় মাথায় রেখে আল্লাহর উপর পরিপূর্ণ আস্থা এবং বিশ্বাস স্থাপন করুন।
         </Typography>
       </Container>
-      <Box sx={{ bgcolor: "background.paper", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
         <Container>
-          <Typography variant="h5" sx={{ mb: 1, color:'#66BB6A'}}>
-            Learn More About Ruqyah
-          </Typography>
-          <Typography sx={{ color: "#e69138", fontSize: "17px" }}>
-            রুকইয়াহ সম্পর্কে আরো বিস্তারিত জানতে নিচের সোর্স গুলো অনুসরন করুন।
-          </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+          }}
+        >
+          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <Typography variant="h2">Learn More About Ruqyah</Typography>
+        </Box>
         </Container>
       </Box>
       <Container sx={{ my: 3 }}>
+          <Typography sx={{ color: "orange", fontSize: "17px" }}>
+            রুকইয়াহ সম্পর্কে আরো বিস্তারিত জানতে নিচের সোর্স গুলো অনুসরন করুন।
+          </Typography>
+          <br/>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
             <Grid container item spacing={3}>

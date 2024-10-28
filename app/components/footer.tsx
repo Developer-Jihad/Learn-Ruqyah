@@ -1,19 +1,19 @@
 import React from "react";
-import { Container, Grid, Box, Typography, Link } from "@mui/material";
+import Link from "next/link";
+import { Container, Grid, Box, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
     <Box
       component="footer"
       sx={{
-        backgroundColor: "primary.main",
+        backgroundColor: "#101e2c",
         color: "white",
         pb: 3,
         mt: "90px",
       }}
     >
       <Container maxWidth="lg">
-        
         <br />
         <Grid container spacing={3}>
           {/* Column 1 */}
@@ -35,9 +35,7 @@ const Footer = () => {
             <Typography variant="body2">
               jihad.developer.bd@gmail.com
             </Typography>
-            <Typography variant="body2" py={1}>
-              Phone: +88 01303 417 316
-            </Typography>
+            <Typography variant="body2">Phone: +88 01303 417 316</Typography>
             <Typography variant="body2">Address: Dhaka, Bangladesh.</Typography>
           </Grid>
 
@@ -45,41 +43,21 @@ const Footer = () => {
             <Typography variant="h5" gutterBottom color={"#64D264"}>
               <b>Quick Links</b>
             </Typography>
-            <Box>
-              <Link href="/" color="inherit" underline="hover" variant="body2">
-                Home
-              </Link>
-            </Box>
-            <Box>
-              <Link
-                href="/videos"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                Videos
-              </Link>
-            </Box>
-            <Box>
-              <Link
-                href="/docs"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                Documents
-              </Link>
-            </Box>
-            <Box>
-              <Link
-                href="/docs"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                Raqy Contacts
-              </Link>
-            </Box>
+            <Link href="/">
+              <Typography variant="body2">Home</Typography>
+            </Link>
+            <Link href="/videos">
+              <Typography variant="body2">All Videow</Typography>
+            </Link>
+            <Link href="/docs">
+              <Typography variant="body2">All Document</Typography>
+            </Link>
+            <Link href="/diagnosis">
+              <Typography variant="body2">ডায়াগনোসিস</Typography>
+            </Link>
+            <Link href="/ruqy">
+              <Typography variant="body2">Ruqy Contacts</Typography>
+            </Link>
           </Grid>
 
           {/* Column 2 */}
@@ -88,61 +66,46 @@ const Footer = () => {
               <b>Trusted Links</b>
             </Typography>
 
-            <Box>
-              <Link
-                href="https://ruqyahbd.org/"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                Ruyah Support BD (Website + Apps)
+            
+              <Link href="https://ruqyahbd.org/">
+                <Typography variant="body2">
+                  Ruyah Support BD (Website + Apps)
+                </Typography>
               </Link>
-            </Box>
 
-            <Box>
-              <Link
-                href="https://duaruqyah.com/ruqyah"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                Dua & Ruqyah (Website + App)
+              <Link href="https://duaruqyah.com/ruqyah">
+                <Typography variant="body2">
+                  Dua & Ruqyah (Website + App)
+                </Typography>
               </Link>
-            </Box>
+            
 
-            <Box>
-              <Link
-                href="https://www.youtube.com/@HijamaRuqyaBD"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                Hijama & Ruqya BD (YouTube)
+              <Link href="https://www.youtube.com/@HijamaRuqyaBD">
+                <Typography variant="body2">
+                  Hijama & Ruqya BD (YouTube)
+                </Typography>
               </Link>
-            </Box>
-            <Box>
-              <Link
-                href="https://www.facebook.com/sukunlife"
-                color="inherit"
-                underline="hover"
-                variant="body2"
-              >
-                SukunLife (Facebook Page)
+            
+              <Link href="https://www.facebook.com/sukunlife">
+                <Typography variant="body2">
+                  SukunLife (Facebook Page)
+                </Typography>
               </Link>
-            </Box>
           </Grid>
         </Grid>
+        <br/>
         <Typography
           variant="body2"
           color={"#98E59A"}
           pt={2}
           textAlign={"center"}
         >
-          <q>Learn Ruqyah and Share the Knowledge</q>  |  © 2024 - Md Jihad Hossain - Web Developer at{" "}
+          <q>Learn Ruqyah and Share the Knowledge</q> | © 2024 - Md Jihad
+          Hossain - Web Developer at{" "}
           <a target="_blank" href="https://skill.assunnahfoundation.org/">
             <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
           </a>
-          .  All Rights Reserved.
+          . All Rights Reserved.
         </Typography>
       </Container>
     </Box>
