@@ -90,15 +90,13 @@ const Footer = () => {
               </Link>
           </Grid>
         </Grid>
-        <br/>
         <Typography
           variant="body2"
           color={"#98E59A"}
           pt={2}
           textAlign={"center"}
         >
-          <q>Learn Ruqyah and Share the Knowledge</q> | © 2024 - Md Jihad
-          Hossain - Web Developer at{" "}
+          <q>Learn Ruqyah and Share the Knowledge</q> | © 2024 - Jihad (Web Developer) at{" "}
           <a target="_blank" href="https://skill.assunnahfoundation.org/">
             <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
           </a>

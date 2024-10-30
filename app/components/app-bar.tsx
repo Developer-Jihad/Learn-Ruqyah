@@ -13,12 +13,16 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
+import LightMenuIcon from "@mui/icons-material/Menu";
+import DarkMenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import logo from "@/public/logo.png";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import { useThemeToggle } from "../themeContext"; // Adjust path as needed
 
 interface Props {
   window?: () => Window;
@@ -36,6 +40,7 @@ const navItems = [
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { toggleTheme, isDarkMode } = useThemeToggle();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -43,7 +48,7 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h5" sx={{ my: 2, color: "white" }}>
+      <Typography variant="h4" sx={{ my: 2, color: isDarkMode ? "#fff" : "#333" }}>
         Learn Ruqyah
       </Typography>
       <Divider />
@@ -54,12 +59,12 @@ export default function DrawerAppBar(props: Props) {
               component={Link}
               href={item.path}
               sx={{
-                bgcolor: "#333",
+                bgcolor: isDarkMode ? "#333" : "#fff",
                 textAlign: "center",
                 borderRadius: "5px",
-                color: "white",
+                color: isDarkMode ? "#fff" : "#333",
                 "&:hover": {
-                  backgroundColor: "#555",
+                  backgroundColor: isDarkMode ? "#555" : "#f0f0f0",
                 },
               }}
             >
@@ -79,8 +84,7 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ maxWidth: "1200px" }}>
@@ -89,8 +93,8 @@ export default function DrawerAppBar(props: Props) {
         component="nav"
         sx={{
           backdropFilter: "blur(10px)",
-          backgroundColor: "rgba(10, 20, 30, 0.9)",
-          borderBottom: '1px solid white'
+          backgroundColor: isDarkMode ? "rgba(10, 20, 30, 0.9)" : "rgba(255, 255, 255, 0.9)",
+          borderBottom: isDarkMode ? "1px solid #fff" : "1px solid #333",
         }}
       >
         <Container disableGutters>
@@ -101,29 +105,21 @@ export default function DrawerAppBar(props: Props) {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "100%", // Make sure the container takes full width of the parent
-                  height: "100%", // Make sure the container takes full height of the parent if needed
+                  width: "100%",
+                  height: "100%",
                 }}
               >
                 <Image src={logo} alt="Ruqyah logo" width={33} height={30} />
               </Box>
             </Link>
             <Typography
-              variant="h5"
+              variant="h4"
               component="div"
-              sx={{ flexGrow: 1, ml: 1 }}
+              sx={{ flexGrow: 1, ml: 1, color: isDarkMode ? "#fff" : "#333" }}
             >
               Learn Ruqyah
             </Typography>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerToggle}
-              sx={{ display: { md: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
+
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
                 <Button
@@ -131,9 +127,11 @@ export default function DrawerAppBar(props: Props) {
                   component={Link}
                   href={item.path}
                   sx={{
-                    color: "#fff",
+                    color: isDarkMode ? "#fff" : "#333",
                     "&:hover": {
-                      backgroundColor: "rgba(255, 255, 255, 0.1)",
+                      backgroundColor: isDarkMode
+                        ? "rgba(255, 255, 255, 0.1)"
+                        : "rgba(0, 0, 0, 0.1)",
                     },
                     fontFamily: "Lexend, sans-serif",
                     px: 3,
@@ -143,6 +141,19 @@ export default function DrawerAppBar(props: Props) {
                 </Button>
               ))}
             </Box>
+            {/* Theme Toggle Button */}
+            <IconButton edge="end" color="inherit" onClick={toggleTheme}>
+              {isDarkMode ? <LightModeIcon /> : <DarkModeIcon sx={{ color: "#333" }}/>}
+            </IconButton>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerToggle}
+              sx={{ display: { md: "none"}, ml:1 }}
+            >
+              {isDarkMode ? <LightMenuIcon /> : <DarkMenuIcon sx={{ color: "#333" }}/>}
+            </IconButton>
           </Toolbar>
         </Container>
       </AppBar>
@@ -163,7 +174,8 @@ export default function DrawerAppBar(props: Props) {
               boxSizing: "border-box",
               width: drawerWidth,
               backdropFilter: "blur(10px)",
-              backgroundColor: "rgba(10, 20, 30, 0.9)",
+              backgroundColor: isDarkMode ? "rgba(10, 20, 30, 0.9)" : "rgba(255, 255, 255, 0.9)",
+              color: isDarkMode ? "#fff" : "#333",
               height: "100vh",
             },
           }}

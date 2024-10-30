@@ -34,7 +34,7 @@ export default function Bookmark({ title, description, url, coverImage }: Bookma
         />
         {/* Content */}
         <CardContent>
-          <Typography gutterBottom variant="h4" component="div" py={1}>
+          <Typography gutterBottom variant="h5" component="div" py={1}>
             <b>{title}</b>
           </Typography>
 

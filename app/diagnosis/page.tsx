@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Container, Box, Typography, CircularProgress } from '@mui/material';
 
-const Diagnosis: React.FC = () => {
+const Diagnosis = () => {
   // State to manage loading of the iframe
   const [iframeLoading, setIframeLoading] = useState<boolean>(true);
 
@@ -22,7 +22,7 @@ const Diagnosis: React.FC = () => {
       }}
     >
       <Container>
-        <Typography variant="body1" sx={{ marginBottom: 3, color: '#333', fontSize: '17px' }}>
+        <Typography variant="body1" sx={{ marginBottom: 3, fontSize: '17px' }}>
           “সেলফ রুকইয়াহ ডায়াগনোসিস” অ্যাপের মাধ্যমে আপনি জিন, জাদু, বদনজর ইত্যাদি প্যারানরমাল সমস্যাগুলো খুব সহজে যাচাই করতে পারবেন। কমপক্ষে এটি সমস্যার ব্যাপারে ধারণা পেতে সহায়ক হবে। আর সমস্যা যাচাইয়ের পর অ্যাপ থেকে একটি প্রাথমিক পরামর্শও দিয়ে দেয়া হবে। বিষয়টা চমৎকার না?
         </Typography>
         <Box sx={{ position: 'relative', width: '100%', height: '100vh' }}>
