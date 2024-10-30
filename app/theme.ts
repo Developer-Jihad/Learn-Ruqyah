@@ -32,8 +32,8 @@ const commonTypography: ThemeOptions["typography"] = {
     fontFamily: "Lexend, sans-serif", // Font for Bengali text
     fontWeight: 600,
     fontSize: "1.25rem", // Desktop
-    "@media (max-width:1200px)": { fontSize: "1.1rem" }, // Tablet
-    "@media (max-width:900px)": { fontSize: "1rem" }, // Mobile
+    "@media (max-width:1200px)": { fontSize: "1.25rem" }, // Tablet
+    "@media (max-width:900px)": { fontSize: "1.25rem" }, // Mobile
   },
   h5: {
     fontFamily: "Hind Siliguri, sans-serif",
