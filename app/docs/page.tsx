@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Box, Typography, Link } from "@mui/material";
+import { Container, Grid, Box, Typography } from "@mui/material";
 import Bookmark from "../components/bookmark";
 import Image from "next/image";
 import docsIcon from "../../app/images/icons/document.png";
@@ -55,7 +55,7 @@ export default function Docs() {
           14. দুনিয়াতে মৃত্যু ব্যতীত এমন কোন রোগ নেই, যার সুস্থতা আল্লাহ নাযিল করেননি। এসকল বিষয় মাথায় রেখে আল্লাহর উপর পরিপূর্ণ আস্থা এবং বিশ্বাস স্থাপন করুন।
         </Typography>
       </Container>
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
         <Box
           sx={{
@@ -65,7 +65,7 @@ export default function Docs() {
           }}
         >
           <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
-          <Typography variant="h2">Learn More About Ruqyah</Typography>
+          <Typography variant="h2">রুকইয়াহ সম্পর্কিত রিসোর্স</Typography>
         </Box>
         </Container>
       </Box>

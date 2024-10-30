@@ -9,7 +9,7 @@ export default function Videos() {
   return (
     <div>
       {/*=========== মৌলিক Videos ===========*/}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
           <Box
             sx={{
@@ -39,33 +39,31 @@ export default function Videos() {
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              {/* <Video
-                url={
-                  "https://www.youtube.com/embed/4cnj9365sww?si=HHCZ1vskiGTy9l6V"
-                }
-              /> */}
-              <Link
-                href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG"
-                target="_blank"
-                passHref
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: 0,
+                  paddingBottom: "56.25%",
+                }}
               >
-                <Box
-                  sx={{
-                    position: "relative",
-                    width: "100%",
-                    height: 0,
-                    paddingBottom: "56.25%",
-                  }}
+                <Link
+                  href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG"
+                  target="_blank"
+                  passHref
                 >
                   <Image
                     src="/ruqyahSeminar.jpg"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      borderRadius: "10px",
+                    }}
                     alt="Picture of the author"
-                    style={{ borderRadius: "10px" }}
                   />
-                </Box>
-              </Link>
+                </Link>
+              </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
@@ -75,33 +73,31 @@ export default function Videos() {
               />
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              {/* <Video
-                url={
-                  "https://www.youtube.com/embed/Fzo5Sf6k92k?si=JTWVoPAZpxdu8TY1"
-                }
-              /> */}
-              <Link
-                href="https://youtu.be/Fzo5Sf6k92k?si=ki3hIWmRbRf8ocww"
-                target="_blank"
-                passHref
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: 0,
+                  paddingBottom: "56.25%",
+                }}
               >
-                <Box
-                  sx={{
-                    position: "relative",
-                    width: "100%",
-                    height: 0,
-                    paddingBottom: "56.25%",
-                  }}
+                <Link
+                  href="https://youtu.be/Fzo5Sf6k92k?si=ki3hIWmRbRf8ocww"
+                  target="_blank"
+                  passHref
                 >
                   <Image
                     src="/saikhLecture.jpg"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      borderRadius: "10px",
+                    }}
                     alt="Picture of the author"
-                    style={{ borderRadius: "10px" }}
                   />
-                </Box>
-              </Link>
+                </Link>
+              </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <Video
@@ -114,7 +110,7 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== জীন সম্পর্কিত Videos ===========*/}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
           <Box
             sx={{
@@ -170,7 +166,7 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== যাদু সম্পর্কিত Videos: ===========*/}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
           <Box
             sx={{
@@ -226,7 +222,7 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== বদ নজর সম্পর্কিত Videos: ===========*/}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
           <Box
             sx={{
@@ -278,7 +274,7 @@ export default function Videos() {
         </Box>
       </Container>
       {/*=========== চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু Videos: ===========*/}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
           <Box
             sx={{

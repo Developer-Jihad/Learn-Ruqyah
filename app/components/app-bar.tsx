@@ -112,12 +112,13 @@ export default function DrawerAppBar(props: Props) {
                 <Image src={logo} alt="Ruqyah logo" width={33} height={30} />
               </Box>
             </Link>
+
             <Typography
               variant="h4"
               component="div"
               sx={{ flexGrow: 1, ml: 1, color: isDarkMode ? "#fff" : "#333" }}
             >
-              Learn Ruqyah
+              <Link href="/">Learn Ruqyah</Link>
             </Typography>
 
             <Box sx={{ display: { xs: "none", md: "block" } }}>

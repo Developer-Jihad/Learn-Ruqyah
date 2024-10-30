@@ -7,7 +7,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "#101e2c",
+        backgroundColor: "#212932",
         color: "white",
         pb: 3,
         mt: "90px",
@@ -43,18 +43,18 @@ const Footer = () => {
             <Typography variant="h5" gutterBottom color={"#64D264"}>
               <b>Quick Links</b>
             </Typography>
-            <Link href="/">
-              <Typography variant="body2">Home</Typography>
-            </Link>
-            <Link href="/videos">
-              <Typography variant="body2">All Videos</Typography>
-            </Link>
-            <Link href="/docs">
-              <Typography variant="body2">All Document</Typography>
-            </Link>
-            <Link href="/diagnosis">
-              <Typography variant="body2">ডায়াগনোসিস</Typography>
-            </Link>
+            <Typography variant="body2">
+              <Link href="/">Home</Link>
+            </Typography>
+            <Typography variant="body2">
+              <Link href="/videos">All Videos</Link>
+            </Typography>
+            <Typography variant="body2">
+              <Link href="/docs">All Document</Link>
+            </Typography>
+            <Typography variant="body2">
+              <Link href="/diagnosis">ডায়াগনোসিস</Link>
+            </Typography>
           </Grid>
 
           {/* Column 2 */}
@@ -63,31 +63,28 @@ const Footer = () => {
               <b>Trusted Links</b>
             </Typography>
 
-            
+            <Typography variant="body2">
               <Link href="https://ruqyahbd.org/">
-                <Typography variant="body2">
-                  Ruyah Support BD (Website + Apps)
-                </Typography>
+                Ruyah Support BD (Website + Apps)
               </Link>
+            </Typography>
 
+            <Typography variant="body2">
               <Link href="https://duaruqyah.com/ruqyah">
-                <Typography variant="body2">
-                  Dua & Ruqyah (Website + App)
-                </Typography>
+                Dua & Ruqyah (Website + App)
               </Link>
-            
+            </Typography>
 
+            <Typography variant="body2">
               <Link href="https://www.youtube.com/@HijamaRuqyaBD">
-                <Typography variant="body2">
-                  Hijama & Ruqya BD (YouTube)
-                </Typography>
+                Hijama & Ruqya BD (YouTube)
               </Link>
-            
+            </Typography>
+            <Typography variant="body2">
               <Link href="https://www.facebook.com/sukunlife">
-                <Typography variant="body2">
-                  SukunLife (Facebook Page)
-                </Typography>
+                SukunLife (Facebook Page)
               </Link>
+            </Typography>
           </Grid>
         </Grid>
         <Typography
@@ -96,7 +93,8 @@ const Footer = () => {
           pt={2}
           textAlign={"center"}
         >
-          <q>Learn Ruqyah and Share the Knowledge</q> | © 2024 - Jihad (Web Developer) at{" "}
+          <q>Learn Ruqyah and Share the Knowledge</q> | © 2024 - Jihad (Web
+          Developer) at{" "}
           <a target="_blank" href="https://skill.assunnahfoundation.org/">
             <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
           </a>

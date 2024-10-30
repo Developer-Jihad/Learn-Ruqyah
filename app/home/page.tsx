@@ -64,26 +64,26 @@ export default function Home() {
       </Container>
 
       {/* -------------- Most Important Videos --------------- */}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, mt: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 1,
-            alignItems: "center",
-          }}
-        >
-          <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
-          <Typography variant="h2">মৌলিক Videos</Typography>
-        </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <Typography variant="h2">মৌলিক Videos</Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 5 }}>
-          <Typography sx={{ color: "orange" }}>
-            অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
-            প্রত্যেকের জন্য আবশ্যক।
-          </Typography>
-          <br/>
+        <Typography sx={{ color: "orange" }}>
+          অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
+          প্রত্যেকের জন্য আবশ্যক।
+        </Typography>
+        <br />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12} md={8}>
@@ -95,28 +95,31 @@ export default function Home() {
             </Grid>
             <Grid container item spacing={3} xs={12} sm={12} md={4}>
               <Grid item xs={12} sm={6} md={12}>
-                <Link
-                  href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG"
-                  target="_blank"
-                  passHref
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    height: 0,
+                    paddingBottom: "56.25%",
+                  }}
                 >
-                  <Box
-                    sx={{
-                      position: "relative",
-                      width: "100%",
-                      height: 0,
-                      paddingBottom: "56.25%",
-                    }}
+                  <Link
+                    href="https://youtu.be/4cnj9365sww?si=2W2q1N_9LXD6vilG"
+                    target="_blank"
+                    passHref
                   >
                     <Image
                       src="/ruqyahSeminar.jpg"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                        borderRadius: "10px",
+                      }}
                       alt="Picture of the author"
-                      style={{ borderRadius: "10px" }}
                     />
-                  </Box>
-                </Link>
+                  </Link>
+                </Box>
               </Grid>
               <Grid item xs={12} sm={6} md={12}>
                 <Video
@@ -126,22 +129,22 @@ export default function Home() {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Link href="/videos" passHref>
-                  <Button
-                    sx={{
-                      width: "100%",
-                      backgroundColor: "#66BB6A",
-                      "&:hover": {
-                        backgroundColor: "#1B5E20",
-                      },
-                    }}
-                    variant="contained"
-                    size="medium"
-                    endIcon={<SendIcon />}
-                  >
+                <Button
+                  sx={{
+                    width: "100%",
+                    backgroundColor: "#66BB6A",
+                    "&:hover": {
+                      backgroundColor: "#1B5E20",
+                    },
+                  }}
+                  variant="contained"
+                  size="medium"
+                  endIcon={<SendIcon />}
+                >
+                  <Link href="/videos" passHref>
                     <b>See All Videos</b>
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </Grid>
             </Grid>
           </Grid>
@@ -149,7 +152,7 @@ export default function Home() {
       </Container>
       <br />
       <Container>
-      <Box
+        <Box
           sx={{
             display: "flex",
             gap: 1,
@@ -174,18 +177,23 @@ export default function Home() {
       </Container>
       <br />
       {/* -------------- Get Help From Raqies ---------------- */}
-      <Box sx={{ bgcolor: "#101e2c", py: 3, my: 5 }}>
+      <Box sx={{ bgcolor: "#212932", py: 3, my: 5 }}>
         <Container>
-        <Box
-          sx={{
-            display: "flex",
-            gap: 1,
-            alignItems: "center",
-          }}
-        >
-          <Image src={contactIcon} alt="Contacts logo" width={33} height={30} />
-          <Typography variant="h2">রাক্বিদের সাহায্য নিন</Typography>
-        </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
+            }}
+          >
+            <Image
+              src={contactIcon}
+              alt="Contacts logo"
+              width={33}
+              height={30}
+            />
+            <Typography variant="h2">রাক্বিদের সাহায্য নিন</Typography>
+          </Box>
         </Container>
       </Box>
       <Container sx={{ my: 3 }}>
@@ -209,32 +217,30 @@ export default function Home() {
               </Grid>
               <Grid container spacing={3} item xs={6} sm={6} md={6}>
                 <Grid item xs={12}>
-                  <Link href="/ruqy" passHref>
                     <Bookmark
                       title="রাক্বি Contacts"
                       description="লিস্ট দিয়েছি বলেই দৌড় দিয়ে চলে যাবেন না। নিজ দায়িত্বে খোঁজখবর নিয়ে... Read More"
-                      url="http://localhost:3000/ruqy"
+                      url="/ruqy"
                       coverImage="./ruqy.png"
                     />
-                  </Link>
                 </Grid>
                 <Grid item xs={12}>
-                  <Link href="/docs" passHref>
-                    <Button
-                      sx={{
-                        width: "100%",
-                        backgroundColor: "#66BB6A",
-                        "&:hover": {
-                          backgroundColor: "#1B5E20",
-                        },
-                      }}
-                      variant="contained"
-                      size="medium"
-                      endIcon={<SendIcon />}
-                    >
+                  <Button
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "#66BB6A",
+                      "&:hover": {
+                        backgroundColor: "#1B5E20",
+                      },
+                    }}
+                    variant="contained"
+                    size="medium"
+                    endIcon={<SendIcon />}
+                  >
+                    <Link href="/docs" passHref>
                       <b>See All Docs</b>
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </Grid>
               </Grid>
             </Grid>
@@ -243,65 +249,4 @@ export default function Home() {
       </Container>
     </Box>
   );
-}
-
-{
-  /* <Container
-  https://www.youtube.com/embed/GFvtirknkAc?si=HaYyVY9ed07xmrX5
-        maxWidth="lg"
-        sx={{
-          //   marginTop: "30px",
-          backgroundColor: "red",
-          width: "100%",
-          backgroundSize: "cover",
-          translate: "0px 0px 0px",
-          backgroundPosition: "center center",
-          //   maxWidth: {
-          //     xs: "100%", // max-width on small screens
-          //     sm: "100%", // max-width on medium screens
-          //     md: "100%", // max-width on large screens
-          //   },
-          maxHeight: "350px",
-          //   borderRadius: 2,
-          overflow: "hidden",
-        }}
-      >
-        <Image
-          src={ruqyahBanner}
-          layout="responsive"
-          alt="Ruqyah Banner"
-          //   fill
-          //   width={1000}
-          //   height={500}
-          style={{
-            objectFit: "cover", // cover, contain, none
-          }}
-        /> 
-      </Container> */
-}
-{
-  /* <Card sx={{ maxWidth: 345 }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="/Ruqyah Banner.png"
-          title="green iguana"
-        />
-      </Card> */
-}
-{
-  /* <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            // bgcolor: "rgba(0, 0, 0, 0.5)", // Semi-transparent overlay
-          }}
-        /> */
-}
-{
-  /* <Typography variant="h2" sx={{ position: "relative", zIndex: 1 }}>
-          Welcome to My Site
-        </Typography> */
 }
