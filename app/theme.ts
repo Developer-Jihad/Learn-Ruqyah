@@ -44,9 +44,9 @@ const commonTypography: ThemeOptions["typography"] = {
   },
   body1: {
     fontFamily: "Noto Serif Bengali, sans-serif", // General body text font
-    fontSize: "0.95rem", // Desktop
-    "@media (max-width:1200px)": { fontSize: "0.9rem" }, // Tablet
-    "@media (max-width:900px)": { fontSize: "0.85rem" }, // Mobile
+    fontSize: "1rem", // Desktop
+    "@media (max-width:1200px)": { fontSize: "0.95rem" }, // Tablet
+    "@media (max-width:900px)": { fontSize: "0.90rem" }, // Mobile
     fontWeight: 400,
     lineHeight: 2,
   },

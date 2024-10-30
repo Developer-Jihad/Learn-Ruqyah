@@ -73,6 +73,7 @@ export default function DrawerAppBar(props: Props) {
                   fontFamily: "Lexend, sans-serif",
                   "& .MuiTypography-root": {
                     fontFamily: "Lexend, sans-serif",
+                    fontWeight:'bold'
                   },
                 }}
                 primary={item.label}
@@ -103,7 +104,7 @@ export default function DrawerAppBar(props: Props) {
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "left",
                   alignItems: "center",
                   width: "100%",
                   height: "100%",
@@ -136,6 +137,7 @@ export default function DrawerAppBar(props: Props) {
                     },
                     fontFamily: "Lexend, sans-serif",
                     px: 3,
+                    fontWeight: 'bold'
                   }}
                 >
                   {item.label}
