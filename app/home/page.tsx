@@ -44,7 +44,7 @@ export default function Home() {
           }}
         >
           <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
-          <Typography variant="h2">রুকইয়াহ (Ruqyah) কি?</Typography>
+          <Typography variant="h2">রুকইয়াহ (Ruqyah) কি? </Typography>
         </Box>
 
         <Typography align="justify" sx={{ mb: 1, textIndent: "17pt" }}>
@@ -80,8 +80,7 @@ export default function Home() {
       </Box>
       <Container sx={{ my: 5 }}>
         <Typography sx={{ color: "orange" }}>
-          অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
-          প্রত্যেকের জন্য আবশ্যক।
+          অন্যান্য ভিডিও দেখার সুযোগ না হলেও এই কয়েকটি ভিডিও অবশ্যই দেখুন।
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>

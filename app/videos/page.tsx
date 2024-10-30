@@ -25,8 +25,7 @@ export default function Videos() {
       </Box>
       <Container sx={{ my: 5 }}>
         <Typography sx={{ color: "orange" }}>
-          অন্যান্য ভিডিও দেখার সময় সুযোগ না হলেও এই কয়েকটি ভিডিও দেখা
-          প্রত্যেকের জন্য আবশ্যক।
+          অন্যান্য ভিডিও দেখার সুযোগ না হলেও এই কয়েকটি ভিডিও অবশ্যই দেখুন।
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>
