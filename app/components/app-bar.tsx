@@ -113,7 +113,7 @@ export default function UnifiedAppBar() {
         sx={{
           backdropFilter: 'blur(10px)',
           borderBottom: `1px solid ${theme.palette.divider}`,
-          backgroundColor: isDarkMode ? 'rgba(10, 20, 30, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+          backgroundColor: isDarkMode ? 'rgba(05, 10, 20, 08)' : 'rgba(255, 255, 255, 0.8)',
         }}
       >
         <Container disableGutters>
@@ -199,7 +199,7 @@ export default function UnifiedAppBar() {
               boxSizing: 'border-box',
               width: drawerWidth,
               backdropFilter: 'blur(10px)',
-              backgroundColor: isDarkMode ? 'rgba(10, 20, 30, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+              backgroundColor: isDarkMode ? 'rgba(05, 10, 20, 08)' : 'rgba(255, 255, 255, 0.8)',
               color: isDarkMode ? '#fff' : '#333',
               height: '100vh',
             },
@@ -216,13 +216,12 @@ export default function UnifiedAppBar() {
           onChange={(event, newValue) => setActiveTab(newValue)}
           style={{
             padding: '35px',
-            // height: '50px',
             position: 'fixed',
             bottom: 0,
             left: 0,
             right: 0,
             borderTop: `1px solid ${theme.palette.divider}`,
-            backgroundColor: isDarkMode ? 'rgba(10, 20, 30, 0.9)' : 'rgba(255, 255, 255, 0.9)',
+            backgroundColor: isDarkMode ? 'rgba(10, 20, 30, 0.8)' : 'rgba(255, 255, 255, 0.8)',
             backdropFilter: 'blur(10px)',
             zIndex: 1000,
           }}
