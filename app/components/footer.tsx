@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Container, Grid, Box, Typography } from "@mui/material";
 
 const Footer = () => {
-  
   const currentYear = new Date().getFullYear();
 
   return (
@@ -96,8 +95,8 @@ const Footer = () => {
           pt={2}
           textAlign={"center"}
         >
-          <q>Learn Ruqyah and Share the Knowledge</q> | © {currentYear} - Md Jihad Hossain (Web
-          Developer) at{" "}
+          <q>Learn Ruqyah and Share the Knowledge</q> | © {currentYear} - Jihad
+          (Web Developer) at{" "}
           <a target="_blank" href="https://skill.assunnahfoundation.org/">
             <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
           </a>
