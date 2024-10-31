@@ -89,14 +89,10 @@ const Footer = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Typography
-          variant="body2"
-          color={"#98E59A"}
-          pt={2}
-          textAlign={"center"}
-        >
-          <q>Learn Ruqyah and Share the Knowledge</q> | Jihad 👨🏻‍💻 © {currentYear} - All Rights Reserved.
-        </Typography>
+        <br/>
+        <hr/>
+        <Typography variant="body2" pt={2}
+          textAlign={"center"}> © {currentYear} - Jihad 👨🏻‍💻 All Rights Reserved.</Typography>
       </Container>
     </Box>
   );

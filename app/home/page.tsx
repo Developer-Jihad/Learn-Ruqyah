@@ -240,6 +240,15 @@ export default function Home() {
             </Grid>
           </Grid>
         </Box>
+        <br/>
+        <Typography
+          variant="h4"
+          color={"#98E59A"}
+          pt={2}
+          textAlign={"center"}
+        >
+          <q>Learn Ruqyah and Share the Knowledge</q> 
+        </Typography>
       </Container>
     </Box>
   );

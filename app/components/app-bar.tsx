@@ -81,9 +81,10 @@ export default function UnifiedAppBar() {
                 bgcolor: isDarkMode ? '#333' : '#fff',
                 textAlign: 'center',
                 borderRadius: '5px',
+                border: activeTab !== item.path ? theme.palette.primary.main : (isDarkMode ? '1px solid #66BB6A' : '1px solid #66BB6A'),
                 color: activeTab === item.path ? theme.palette.primary.main : (isDarkMode ? '#fff' : '#333'),
                 '&:hover': {
-                  backgroundColor: isDarkMode ? '#555' : '#f0f0f0',
+                  backgroundColor: isDarkMode ? '#555' : '#CBF5DD',
                 },
               }}
             >
@@ -147,11 +148,14 @@ export default function UnifiedAppBar() {
                   href={item.path}
                   onClick={() => handleNavClick(item.path)}
                   sx={{
+                    borderRadius:'0px',
+                    borderBottom: activeTab !== item.path ? theme.palette.primary.main : (isDarkMode ? '3px solid #66BB6A' : '3px solid #66BB6A'),
                     color: activeTab === item.path ? theme.palette.primary.main : (isDarkMode ? '#fff' : '#333'),
                     '&:hover': {
+                      borderRadius:'5px',
                       backgroundColor: isDarkMode
-                        ? 'rgba(255, 255, 255, 0.1)'
-                        : 'rgba(0, 0, 0, 0.1)',
+                        ? '#CBF5DD'
+                        : '#CBF5DD',
                     },
                     fontFamily: 'Lexend, sans-serif',
                     px: 3,
@@ -229,6 +233,7 @@ export default function UnifiedAppBar() {
               component={Link}
               href={item.path}
               onClick={() => setActiveTab(item.path)}
+              
               sx={{
                 color: activeTab === item.path ? theme.palette.primary.main : theme.palette.text.secondary,
                 '& .MuiBottomNavigationAction-label': {
