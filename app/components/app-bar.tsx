@@ -113,7 +113,7 @@ export default function UnifiedAppBar() {
         sx={{
           backdropFilter: 'blur(10px)',
           borderBottom: `1px solid ${theme.palette.divider}`,
-          backgroundColor: isDarkMode ? 'rgba(05, 10, 20, 08)' : 'rgba(255, 255, 255, 0.8)',
+          backgroundColor: isDarkMode ? 'rgba(05, 10, 20, 0.8)' : 'rgba(255, 255, 255, 0.8)',
         }}
       >
         <Container disableGutters>
@@ -154,7 +154,7 @@ export default function UnifiedAppBar() {
                     '&:hover': {
                       borderRadius:'5px',
                       backgroundColor: isDarkMode
-                        ? '#CBF5DD'
+                        ? '#555'
                         : '#CBF5DD',
                     },
                     fontFamily: 'Lexend, sans-serif',
@@ -199,7 +199,7 @@ export default function UnifiedAppBar() {
               boxSizing: 'border-box',
               width: drawerWidth,
               backdropFilter: 'blur(10px)',
-              backgroundColor: isDarkMode ? 'rgba(05, 10, 20, 08)' : 'rgba(255, 255, 255, 0.8)',
+              backgroundColor: isDarkMode ? 'rgba(05, 10, 20, 0.8)' : 'rgba(255, 255, 255, 0.8)',
               color: isDarkMode ? '#fff' : '#333',
               height: '100vh',
             },
