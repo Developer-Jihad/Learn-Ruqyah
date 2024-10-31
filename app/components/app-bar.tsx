@@ -211,9 +211,12 @@ export default function UnifiedAppBar() {
 
       {isMobile && (
         <BottomNavigation
+        
           value={activeTab}
           onChange={(event, newValue) => setActiveTab(newValue)}
           style={{
+            padding: '35px',
+            // height: '50px',
             position: 'fixed',
             bottom: 0,
             left: 0,
@@ -242,9 +245,9 @@ export default function UnifiedAppBar() {
                   fontWeight: theme.typography.button.fontWeight,
                   color: activeTab === item.path ? theme.palette.primary.main : theme.palette.text.secondary,
                 },
-                '&:hover': {
-                  backgroundColor: theme.palette.action.hover,
-                },
+                // '&:hover': {
+                //   backgroundColor: theme.palette.action.hover,
+                // },
               }}
             />
           ))}
