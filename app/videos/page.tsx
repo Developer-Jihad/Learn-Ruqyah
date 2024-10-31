@@ -9,6 +9,15 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 export default function Videos() {
   return (
     <div>
+      <Typography
+        variant="h1"
+        gutterBottom
+        sx={{
+          textAlign: "center", mt: 5
+        }}
+      >
+        রুকইয়াহ সম্পর্কিত কমপ্লিট ভিডিও রিসোর্স
+      </Typography>
       {/*=========== মৌলিক Videos ===========*/}
       <Box sx={{ bgcolor: "#212932", py: 3, mt: 5 }}>
         <Container>

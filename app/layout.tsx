@@ -37,7 +37,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Box sx={{display: { xs: "block", md: "none" }, height: '70px'}}/>
-          <MobileBottomNav/>
+          {/* <MobileBottomNav/> */}
         </ThemeToggleProvider>
       </body>
     </html>

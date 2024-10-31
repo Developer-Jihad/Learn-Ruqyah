@@ -7,11 +7,12 @@ import { createTheme, ThemeOptions } from "@mui/material/styles";
 const commonTypography: ThemeOptions["typography"] = {
   fontFamily: "Noto Serif Bengali, sans-serif", // General fallback font
   h1: {
-    fontFamily: "Lexend, sans-serif", // Main heading font
+    fontFamily: "Hind Siliguri, sans-serif", // Main heading font
     fontWeight: 700,
-    fontSize: "2.25rem", // Desktop
-    "@media (max-width:1200px)": { fontSize: "2rem" }, // Tablet
-    "@media (max-width:900px)": { fontSize: "1.75rem" }, // Mobile
+    lineHeight: 1.5,
+    fontSize: "2.5rem", // Desktop
+    "@media (max-width:1200px)": { fontSize: "2.25rem" }, // Tablet
+    "@media (max-width:900px)": { fontSize: "2rem" }, // Mobile
   },
   h2: {
     fontFamily: "Hind Siliguri, sans-serif", // Subheading font
