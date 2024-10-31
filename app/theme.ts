@@ -30,7 +30,7 @@ const commonTypography: ThemeOptions["typography"] = {
   },
   h4: {
     fontFamily: "Lexend, sans-serif", // Font for Bengali text
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: "1.25rem", // Desktop
     "@media (max-width:1200px)": { fontSize: "1.25rem" }, // Tablet
     "@media (max-width:900px)": { fontSize: "1.25rem" }, // Mobile
@@ -45,16 +45,16 @@ const commonTypography: ThemeOptions["typography"] = {
   body1: {
     fontFamily: "Noto Serif Bengali, sans-serif", // General body text font
     fontSize: "1rem", // Desktop
-    "@media (max-width:1200px)": { fontSize: "0.95rem" }, // Tablet
-    "@media (max-width:900px)": { fontSize: "0.90rem" }, // Mobile
+    "@media (max-width:1200px)": { fontSize: "1rem" }, // Tablet
+    "@media (max-width:900px)": { fontSize: "1rem" }, // Mobile
     fontWeight: 400,
     lineHeight: 2,
   },
   body2: {
     fontFamily: "Noto Serif Bengali, sans-serif", // Different font for secondary text
     fontSize: "0.875rem", // Desktop
-    "@media (max-width:1200px)": { fontSize: "0.85rem" }, // Tablet
-    "@media (max-width:900px)": { fontSize: "0.8rem" }, // Mobile
+    "@media (max-width:1200px)": { fontSize: "0.95rem" }, // Tablet
+    "@media (max-width:900px)": { fontSize: "0.9rem" }, // Mobile
     fontWeight: 400,
     lineHeight: 2,
   },

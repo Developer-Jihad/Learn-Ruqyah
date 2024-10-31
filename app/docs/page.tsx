@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Grid, Box, Typography } from "@mui/material";
 import Bookmark from "../components/bookmark";
-import Image from "next/image";
-import docsIcon from "../../app/images/icons/document.png";
+import DescriptionIcon from '@mui/icons-material/Description';
+
 
 
 export default function Docs() {
@@ -17,7 +17,7 @@ export default function Docs() {
             mt: 5,
           }}
         >
-          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <DescriptionIcon sx={{color:'#66BB6A'}} />
           <Typography variant="h2">রুকইয়াহ First-Aid</Typography>
         </Box>
         <br />
@@ -64,7 +64,7 @@ export default function Docs() {
             alignItems: "center",
           }}
         >
-          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <DescriptionIcon sx={{color:'#66BB6A'}} />
           <Typography variant="h2">রুকইয়াহ সম্পর্কিত রিসোর্স</Typography>
         </Box>
         </Container>

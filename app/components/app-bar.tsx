@@ -95,7 +95,7 @@ export default function DrawerAppBar(props: Props) {
         sx={{
           backdropFilter: "blur(10px)",
           backgroundColor: isDarkMode ? "rgba(10, 20, 30, 0.9)" : "rgba(255, 255, 255, 0.9)",
-          borderBottom: isDarkMode ? "1px solid #fff" : "1px solid #333",
+          // borderBottom: isDarkMode ? "1px solid #fff" : "1px solid #333",
         }}
       >
         <Container disableGutters>
@@ -104,13 +104,13 @@ export default function DrawerAppBar(props: Props) {
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "left",
+                  justifyContent: "center",
                   alignItems: "center",
                   width: "100%",
                   height: "100%",
                 }}
               >
-                <Image src={logo} alt="Ruqyah logo" width={33} height={30} />
+                <Image src={logo} alt="Ruqyah logo" width={20} height={21} />
               </Box>
             </Link>
 

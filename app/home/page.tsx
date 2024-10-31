@@ -5,9 +5,10 @@ import SendIcon from "@mui/icons-material/Send";
 import Video from "../components/video";
 import Bookmark from "../components/bookmark";
 import Image from "next/image";
-import docsIcon from "../../app/images/icons/document.png";
-import videosIcon from "../../app/images/icons/videos.png";
-import contactIcon from "../../app/images/icons/mobile.png";
+import DescriptionIcon from '@mui/icons-material/Description';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+
 
 export default function Home() {
   return (
@@ -34,17 +35,17 @@ export default function Home() {
         />
       </Box>
       <Container sx={{ mt: 3 }}>
+
         <Box
           sx={{
             display: "flex",
             gap: 1,
-            alignItems: "center",
             mt: 5,
             mb: 2,
           }}
         >
-          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
-          <Typography variant="h2">রুকইয়াহ (Ruqyah) কি? </Typography>
+          <DescriptionIcon sx={{color:'#66BB6A'}} />
+          <Typography variant="h2"> রুকইয়াহ (Ruqyah) কি? </Typography>
         </Box>
 
         <Typography align="justify" sx={{ mb: 1, textIndent: "17pt" }}>
@@ -69,11 +70,11 @@ export default function Home() {
           <Box
             sx={{
               display: "flex",
-              gap: 1,
               alignItems: "center",
+              gap: 1,
             }}
           >
-            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">মৌলিক Videos</Typography>
           </Box>
         </Container>
@@ -155,10 +156,9 @@ export default function Home() {
           sx={{
             display: "flex",
             gap: 1,
-            alignItems: "center",
           }}
         >
-          <Image src={docsIcon} alt="Documents logo" width={33} height={30} />
+          <DescriptionIcon sx={{color:'#66BB6A'}} />
           <Typography variant="h2">রুকইয়াহ বৈধ হওয়ার শর্ত:</Typography>
         </Box>
         <br />
@@ -185,12 +185,7 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <Image
-              src={contactIcon}
-              alt="Contacts logo"
-              width={33}
-              height={30}
-            />
+            <PermPhoneMsgIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">রাক্বিদের সাহায্য নিন</Typography>
           </Box>
         </Container>

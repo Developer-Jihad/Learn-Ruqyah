@@ -3,7 +3,8 @@ import React from "react";
 import Video from "../components/video";
 import Image from "next/image";
 import Link from "next/link";
-import videosIcon from "../../app/images/icons/videos.png";
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+
 
 export default function Videos() {
   return (
@@ -18,7 +19,7 @@ export default function Videos() {
               alignItems: "center",
             }}
           >
-            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">মৌলিক Videos</Typography>
           </Box>
         </Container>
@@ -118,7 +119,7 @@ export default function Videos() {
               alignItems: "center",
             }}
           >
-            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">জীন সম্পর্কিত Videos</Typography>
           </Box>
         </Container>
@@ -174,7 +175,7 @@ export default function Videos() {
               alignItems: "center",
             }}
           >
-            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">যাদু সম্পর্কিত Videos</Typography>
           </Box>
         </Container>
@@ -230,7 +231,7 @@ export default function Videos() {
               alignItems: "center",
             }}
           >
-            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">বদ নজর সম্পর্কিত Videos</Typography>
           </Box>
         </Container>
@@ -282,7 +283,7 @@ export default function Videos() {
               alignItems: "center",
             }}
           >
-            <Image src={videosIcon} alt="Videos Icon" width={33} height={30} />
+            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
             <Typography variant="h2">
               চিকিৎসা চলাকালীন রুগীদের রিঅ্যাকশনের কিছু Videos
             </Typography>
