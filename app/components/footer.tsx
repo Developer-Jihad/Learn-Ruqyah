@@ -38,7 +38,7 @@ const Footer = () => {
               jihad.developer.bd@gmail.com
             </Typography>
             <Typography variant="body2">Phone: +88 01303 417 316</Typography>
-            <Typography variant="body2">Address: Dhaka, Bangladesh.</Typography>
+            <Typography variant="body2">Address: Bangladesh.</Typography>
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
@@ -89,10 +89,10 @@ const Footer = () => {
             </Typography>
           </Grid>
         </Grid>
-        <br/>
+        {/* <br/>
         <hr/>
         <Typography variant="body2" pt={2}
-          textAlign={"center"}> © {currentYear} - Jihad 👨🏻‍💻 All Rights Reserved.</Typography>
+          textAlign={"center"}> © {currentYear} - Jihad . All Rights Reserved.</Typography> */}
       </Container>
     </Box>
   );
