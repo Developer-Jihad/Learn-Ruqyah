@@ -5,10 +5,9 @@ import SendIcon from "@mui/icons-material/Send";
 import Video from "../components/video";
 import Bookmark from "../components/bookmark";
 import Image from "next/image";
-import DescriptionIcon from '@mui/icons-material/Description';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
-
+import DescriptionIcon from "@mui/icons-material/Description";
+import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
+import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <Box
         sx={{
           width: "100%",
-          backgroundColor: "black",
         }}
       >
         <Container
@@ -35,7 +33,6 @@ export default function Home() {
         />
       </Box>
       <Container sx={{ mt: 3 }}>
-
         <Box
           sx={{
             display: "flex",
@@ -44,7 +41,7 @@ export default function Home() {
             mb: 2,
           }}
         >
-          <DescriptionIcon sx={{color:'#66BB6A'}} />
+          <DescriptionIcon sx={{ color: "#66BB6A" }} />
           <Typography variant="h2"> রুকইয়াহ (Ruqyah) কি? </Typography>
         </Box>
 
@@ -74,7 +71,7 @@ export default function Home() {
               gap: 1,
             }}
           >
-            <VideoLibraryIcon sx={{color:'#66BB6A'}} />
+            <VideoLibraryIcon sx={{ color: "#66BB6A" }} />
             <Typography variant="h2">মৌলিক Videos</Typography>
           </Box>
         </Container>
@@ -158,7 +155,7 @@ export default function Home() {
             gap: 1,
           }}
         >
-          <DescriptionIcon sx={{color:'#66BB6A'}} />
+          <DescriptionIcon sx={{ color: "#66BB6A" }} />
           <Typography variant="h2">রুকইয়াহ বৈধ হওয়ার শর্ত:</Typography>
         </Box>
         <br />
@@ -185,7 +182,7 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <PermPhoneMsgIcon sx={{color:'#66BB6A'}} />
+            <PermPhoneMsgIcon sx={{ color: "#66BB6A" }} />
             <Typography variant="h2">রাক্বিদের সাহায্য নিন</Typography>
           </Box>
         </Container>
@@ -211,12 +208,12 @@ export default function Home() {
               </Grid>
               <Grid container spacing={3} item xs={6} sm={6} md={6}>
                 <Grid item xs={12}>
-                    <Bookmark
-                      title="রাক্বি Contacts"
-                      description="লিস্ট দিয়েছি বলেই দৌড় দিয়ে চলে যাবেন না। নিজ দায়িত্বে খোঁজখবর নিয়ে... Read More"
-                      url="/ruqy"
-                      coverImage="./ruqy.png"
-                    />
+                  <Bookmark
+                    title="রাক্বি Contacts"
+                    description="লিস্ট দিয়েছি বলেই দৌড় দিয়ে চলে যাবেন না। নিজ দায়িত্বে খোঁজখবর নিয়ে... Read More"
+                    url="/ruqy"
+                    coverImage="./ruqy.png"
+                  />
                 </Grid>
                 <Grid item xs={12}>
                   <Button
@@ -240,14 +237,9 @@ export default function Home() {
             </Grid>
           </Grid>
         </Box>
-        <br/>
-        <Typography
-          variant="h4"
-          color={"#98E59A"}
-          pt={2}
-          textAlign={"center"}
-        >
-          <q>Learn Ruqyah and Share the Knowledge</q> 
+        <br />
+        <Typography variant="h4" color={"#98E59A"} pt={2} textAlign={"center"}>
+          <q>Learn Ruqyah and Share the Knowledge</q>
         </Typography>
       </Container>
     </Box>
