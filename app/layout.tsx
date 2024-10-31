@@ -36,7 +36,7 @@ export default function RootLayout({
           <DrawerAppBar />
           {children}
           <Footer />
-          <Box sx={{display: { xs: "block", md: "none" }, height: '50px'}}/>
+          <Box sx={{display: { xs: "block", sm: "none" }, height: '50px'}}/>
           {/* <MobileBottomNav/> */}
         </ThemeToggleProvider>
       </body>

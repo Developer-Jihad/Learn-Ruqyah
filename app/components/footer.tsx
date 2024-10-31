@@ -95,12 +95,7 @@ const Footer = () => {
           pt={2}
           textAlign={"center"}
         >
-          <q>Learn Ruqyah and Share the Knowledge</q> | © {currentYear} - Jihad
-          (Web Developer) at{" "}
-          <a target="_blank" href="https://skill.assunnahfoundation.org/">
-            <abbr title="As-Sunnah Skill Development Institute">ASSDI</abbr>
-          </a>
-          . All Rights Reserved.
+          <q>Learn Ruqyah and Share the Knowledge</q> | Jihad 👨🏻‍💻 © {currentYear} - All Rights Reserved.
         </Typography>
       </Container>
     </Box>

@@ -84,7 +84,7 @@ const lightTheme = createTheme({
       paper: "#f4f4f4",
     },
     text: {
-      primary: "#333333",
+      primary: "#444",
       secondary: "#555555",
     },
     warning: {
@@ -107,7 +107,7 @@ const darkTheme = createTheme({
       contrastText: "#ffffff",
     },
     background: {
-      default: "#121212",
+      default: "#333",
       paper: "#1e1e1e",
     },
     text: {
