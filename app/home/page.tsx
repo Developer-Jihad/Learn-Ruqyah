@@ -16,6 +16,7 @@ export default function Home() {
       <Box
         sx={{
           width: "100%",
+          backgroundColor: "black",
         }}
       >
         <Container

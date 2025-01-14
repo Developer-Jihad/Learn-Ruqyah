@@ -39,9 +39,9 @@ interface NavItem {
 
 const drawerWidth = 200;
 const navItems: NavItem[] = [
+  { label: 'Home', path: '/', icon: <HomeIcon /> },
   { label: 'Docs', path: '/docs', icon: <DescriptionIcon /> },
   { label: 'Videos', path: '/videos', icon: <VideoLibraryIcon /> },
-  { label: 'Home', path: '/', icon: <HomeIcon /> },
   { label: 'ডায়াগনোসিস', path: '/diagnosis', icon: <HealingIcon /> },
   { label: 'Ruqy', path: '/ruqy', icon: <PermPhoneMsgIcon /> },
 ];
